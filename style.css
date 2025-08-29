@@ -36,7 +36,7 @@ footer{border-top:1px solid #e2e8f0;color:#64748b}
 
 
 body {
-  background: url("assets/onehealth_bg.jpg") no-repeat center center fixed;
+  background: url("assets/img_fond.png") no-repeat center center fixed;
   background-size: cover;
 }
 main.container, header.container, footer.container {
