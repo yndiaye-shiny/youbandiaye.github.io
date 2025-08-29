@@ -30,3 +30,6 @@ footer{border-top:1px solid #e2e8f0;color:#64748b}
   display: block;
   margin: 0 auto;
 }
+#bio .grid.two {
+  align-items: center;
+}
