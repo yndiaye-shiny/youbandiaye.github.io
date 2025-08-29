@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications — Youba NDIAYE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="publications">
+<header class="container">
+  <div class="brand">
+    <h1><a class="home" href="index.html">Youba NDIAYE</a></h1>
+    <p class="tagline">Associate Professor of Economics — University of Lorraine</p>
+    <div class="links">
+      <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn outline" href="mailto:youba.ndiaye@univ-lorraine.fr">Email</a>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" data-page="index">About</a>
+    <a href="research.html" data-page="research">Research</a>
+    <a href="publications.html" data-page="publications">Publications</a>
+    <a href="teaching.html" data-page="teaching">Teaching</a>
+    <a href="contact.html" data-page="contact">Contact</a>
+  </nav>
+</header>
+<main class="container">
+
+<section>
+  <h2>Selected publications</h2>
+  <ul class="pubs">
+    <li><strong>2024</strong> — Cocoa, livelihoods and deforestation in the Congo Basin: A spatial analysis. <em>PLOS ONE</em>.</li>
+    <li><strong>2023</strong> — Cost of lameness in dairy herds: An integrated bioeconomic modeling approach. <em>Journal of Dairy Science</em>.</li>
+    <li><strong>2023</strong> — The Marginal Abatement Cost of Antimicrobials for Dairy Cow Mastitis. <em>Veterinary Sciences</em>.</li>
+    <li><strong>2022</strong> — Spatial evaluation of animal health care accessibility and veterinary shortage in France. <em>Scientific Reports</em>.</li>
+    <li><strong>2021</strong> — Environmental expenditure interactions among countries: a spatial panel analysis. <em>Economic Modelling</em>.</li>
+    <li><strong>2018</strong> — Road tax interactions among local governments: a spatial panel analysis. <em>Applied Economics</em>.</li>
+  </ul>
+  <p class="note">You can replace this list later with a full bibliography (BibTeX/Markdown).</p>
+</section>
+
+</main>
+<footer class="container">
+  <p>© <span id="year"></span> Youba NDIAYE · Simple static site hosted on GitHub Pages</p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const page = document.body.dataset.page;
+  document.querySelectorAll('nav a').forEach(a => {
+    if (a.dataset.page === page) a.classList.add('active');
+  });
+</script>
+</body>
+</html>

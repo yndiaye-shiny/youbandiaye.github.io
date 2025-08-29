@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Youba NDIAYE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="research">
+<header class="container">
+  <div class="brand">
+    <h1><a class="home" href="index.html">Youba NDIAYE</a></h1>
+    <p class="tagline">Associate Professor of Economics — University of Lorraine</p>
+    <div class="links">
+      <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn outline" href="mailto:youba.ndiaye@univ-lorraine.fr">Email</a>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" data-page="index">About</a>
+    <a href="research.html" data-page="research">Research</a>
+    <a href="publications.html" data-page="publications">Publications</a>
+    <a href="teaching.html" data-page="teaching">Teaching</a>
+    <a href="contact.html" data-page="contact">Contact</a>
+  </nav>
+</header>
+<main class="container">
+
+<section>
+  <h2>Research</h2>
+  <p>I study how environmental and energy policies, spatial interactions, and behavioral responses shape sustainable outcomes across regions and sectors.</p>
+  <h3>Themes</h3>
+  <ul>
+    <li>Sustainable development and environmental policy</li>
+    <li>Emissions dynamics and energy transitions</li>
+    <li>Agriculture, land use, and rural labor</li>
+    <li>Animal health economics and biosecurity</li>
+    <li>Applied econometrics & spatial econometrics</li>
+  </ul>
+  <h3>Works in progress (selected)</h3>
+  <ul>
+    <li>Renewable energies and CO₂ emissions dynamics in the EU.</li>
+    <li>Demand for agricultural labor in France.</li>
+    <li>Climate change and land-use strategies (FADN microdata).</li>
+  </ul>
+</section>
+
+</main>
+<footer class="container">
+  <p>© <span id="year"></span> Youba NDIAYE · Simple static site hosted on GitHub Pages</p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const page = document.body.dataset.page;
+  document.querySelectorAll('nav a').forEach(a => {
+    if (a.dataset.page === page) a.classList.add('active');
+  });
+</script>
+</body>
+</html>

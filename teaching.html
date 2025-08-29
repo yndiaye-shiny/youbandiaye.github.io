@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teaching — Youba NDIAYE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="teaching">
+<header class="container">
+  <div class="brand">
+    <h1><a class="home" href="index.html">Youba NDIAYE</a></h1>
+    <p class="tagline">Associate Professor of Economics — University of Lorraine</p>
+    <div class="links">
+      <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn outline" href="mailto:youba.ndiaye@univ-lorraine.fr">Email</a>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" data-page="index">About</a>
+    <a href="research.html" data-page="research">Research</a>
+    <a href="publications.html" data-page="publications">Publications</a>
+    <a href="teaching.html" data-page="teaching">Teaching</a>
+    <a href="contact.html" data-page="contact">Contact</a>
+  </nav>
+</header>
+<main class="container">
+
+<section>
+  <h2>Teaching</h2>
+  <ul>
+    <li>Environmental economics, Econometrics, Quantitative methods.</li>
+    <li>Spatial econometrics — cross-section and panel models.</li>
+    <li>Animal health economics — ENVT, VetAgro Sup, UAB.</li>
+  </ul>
+</section>
+
+</main>
+<footer class="container">
+  <p>© <span id="year"></span> Youba NDIAYE · Simple static site hosted on GitHub Pages</p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const page = document.body.dataset.page;
+  document.querySelectorAll('nav a').forEach(a => {
+    if (a.dataset.page === page) a.classList.add('active');
+  });
+</script>
+</body>
+</html>
